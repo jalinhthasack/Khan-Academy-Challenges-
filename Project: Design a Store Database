@@ -1,0 +1,25 @@
+##Create your own store! Your store should sell one type of things, like clothing or bikes, whatever you want your store to specialize in.
+You should have a table for all the items in your store, and at least 5 columns for the kind of data you think you'd need to store.
+You should sell at least 15 items, and use select statements to order your items by price and show at least one statistic about the items.## 
+
+CREATE TABLE Sojaded (Id INTEGER PRIMARY KEY, Name TEXT, Price INTEGER, Size TEXT, Color TEXT);
+
+INSERT INTO Sojaded VALUES (1, "TOP", 4, "SMALL", "BLACK");
+INSERT INTO Sojaded VALUES (2, "TOP", 4,  "MEDIUM", "BLACK"); 
+INSERT INTO Sojaded VALUES (3, "TOP", 4, "LARGE", "BLACK"); 
+INSERT INTO Sojaded VALUES (4, "TOP", 4, "X-LARGE", "BLACK"); 
+INSERT INTO Sojaded VALUES (5, "TOP", 4, "SMALL", "WHITE"); 
+INSERT INTO Sojaded VALUES (6, "TOP", 4, "MEDIUM", "WHITE"); 
+INSERT INTO Sojaded VALUES (7, "TOP", 4, "LARGE", "WHITE"); 
+INSERT INTO Sojaded VALUES (8, "TOP",4, "LARGE", "WHITE"); 
+INSERT INTO Sojaded VALUES (9, "TOP", 4, "SMALL", "BLUE"); 
+INSERT INTO Sojaded VALUES (10, "TOP", 4, "MEDIUM", "BLUE"); 
+INSERT INTO Sojaded VALUES (11, "TOP", 4, "LARGE", "BLUE"); 
+INSERT INTO Sojaded VALUES (12, "TOP", 4, "X-LARGE", "BLUE");
+INSERT INTO Sojaded VALUES (13, "TOP", 4, "SMALL", "BLUE");
+INSERT INTO Sojaded VALUES (14, "TOP", 4, "MEDIUM", "BLUE"); 
+INSERT INTO Sojaded VALUES (15, "TOP", 4, "LARGE", "BLUE");  
+
+SELECT * FROM Sojaded order by size;
+
+SELECT SUM(PRICE) FROM Sojaded; 
