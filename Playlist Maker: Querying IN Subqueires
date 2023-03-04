@@ -1,5 +1,5 @@
-## We've created a database of songs and artists, and you'll make playlists from them in this challenge. 
-In this first step, select the title of all the songs by the artist named 'Queen'. ## 
+/* We've created a database of songs and artists, and you'll make playlists from them in this challenge. 
+In this first step, select the title of all the songs by the artist named 'Queen'. */ 
 
 CREATE TABLE artists (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -62,13 +62,13 @@ INSERT INTO songs (artist, title)
     
 SELECT title FROM songs WHERE artist = "Queen"; 
 
-## Now you'll make a 'Pop' playlist. In preparation, select the name of all of the artists from the 'Pop' genre.
-(Tip: Make sure you type it 'Pop', SQL considers that different from 'pop'.) ## 
+/* Now you'll make a 'Pop' playlist. In preparation, select the name of all of the artists from the 'Pop' genre.
+(Tip: Make sure you type it 'Pop', SQL considers that different from 'pop'.) */
 
 SELECT name FROM artists WHERE genre = "Pop"; 
 
-## To finish creating the 'Pop' playlist, add another query that will select the title of all the songs from the 'Pop' artists. 
-It should use IN on a nested subquery that's based on your previous query. ##
+/* To finish creating the 'Pop' playlist, add another query that will select the title of all the songs from the 'Pop' artists. 
+It should use IN on a nested subquery that's based on your previous query. */ 
 
 SELECT title FROM songs WHERE artist IN
 ( SELECT name FROM artists WHERE genre = "Pop"); 
