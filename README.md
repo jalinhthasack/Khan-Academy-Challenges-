@@ -1,2 +1,7 @@
 # Khan-Academy-Challenges-
-SQL Challenges from Khan Academy: Creating tables, Inserting Data, Aggregating Data, And/Or/In, subqueries, Joins, etc.  
+This GitHub repository contains the schemas, questions and solutions to Intro To SQL: Querying and managing data. The coursework included:
+
+- SQL Basics
+- More Advanced SQL Queries
+- Relational Queries in SQL
+- Modifying Databases with SQL
