@@ -4,5 +4,5 @@ It should have columns for id, name, and rating. */
 CREATE TABLE books (Id INTEGER PRIMARY KEY, name TEXT, rating INTEGER); 
 INSERT INTO books VALUES (1, "A Child Called It", 5);
 INSERT INTO books VALUES (2, "Atomic Habits", 3); 
-INSERT INTO books VALUES (3, "The Alchemist", 8); 
+INSERT INTO books VALUES (3, "The Alchemist", 8);
 
